@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etch A Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs-container">
+        <div class="inputs-container__grid-btn">
+          <span>Grid</span>
+        </div>
+        <div class="inputs-container__clear-btn">
+          <span>Clear</span>
+        </div>
+        <div class="inputs-container__shade-btn">
+          <span>Shade</span>
+        </div>
+        <div class="inputs-container__random-btn">
+          <span>Random</span>
+        </div>
+        <div class="inputs-container__erase-btn">
+          <span>Erase</span>
+        </div>
+        <div class="inputs-container__color-btn">
+          <input type="color" value="#000000" />
+          <span>Color</span>
+        </div>
+      </div>
+      <div class="sketch-area__container">
+        <div class="sketch-area"></div>
+      </div>
+      <div class="slider-container">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="16"
+          class="slider"
+          id="slider"
+        />
+        <p class="slider-value">16 x 16</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

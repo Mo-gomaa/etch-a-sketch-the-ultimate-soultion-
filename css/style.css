@@ -1,0 +1,200 @@
+:root {
+  --grid-width: 600px;
+  --accent-color: #04aa6d;
+  --inactive-color: rgba(0, 0, 0, 0.25);
+}
+body {
+  background-color: rgb(4, 4, 58);
+  color: rgb(4, 4, 58);
+  font-size: 20px;
+  font-family: "Press Start 2P", system-ui, sans-serif;
+  font-weight: 400;
+}
+.container {
+  height: 90%;
+  width: 660px;
+  background-color: #0fddcf;
+  padding: 40px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.inputs-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto auto auto;
+  padding: 0;
+  border-bottom: 3px solid rgb(4, 4, 58);
+}
+
+.inputs-container div {
+  margin: 10px;
+  padding: 5px 10px;
+  transition: 0.2s;
+}
+.inputs-container div:hover span {
+  transform: scale(1.1);
+  background-color: rgb(4, 4, 58);
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 5px 7px;
+}
+.inputs-container span {
+  font-size: 15px;
+}
+
+.inputs-container__color-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="color"] {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: none;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: rgb(4, 4, 58);
+}
+
+.sketch-area__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+.sketch-area {
+  width: 600px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider-container {
+  width: 100%;
+  border-top: 3px solid rgb(4, 4, 58);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 10%;
+}
+
+.slider {
+  background-color: #0fddcf;
+  width: 100%;
+}
+
+.slider-value {
+  margin-top: 15px;
+}
+input[type="range"] {
+  height: 45px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 29px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #50555c;
+  background: #04043a;
+  border-radius: 6px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 2px 2px 4px #000000;
+  border: 0px solid #000000;
+  height: 37px;
+  width: 38px;
+  border-radius: 10px;
+  background: #0fddcf;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #04043a;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 29px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #50555c;
+  background: #04043a;
+  border-radius: 6px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 2px 2px 4px #000000;
+  border: 0px solid #000000;
+  height: 37px;
+  width: 38px;
+  border-radius: 10px;
+  background: #0fddcf;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 29px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #04043a;
+  border: 0px solid #000000;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px #50555c;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #04043a;
+  border: 0px solid #000000;
+  border-radius: 12px;
+  box-shadow: 1px 1px 1px #50555c;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 2px 2px 4px #000000;
+  border: 0px solid #000000;
+  height: 37px;
+  width: 38px;
+  border-radius: 10px;
+  background: #0fddcf;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #04043a;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #04043a;
+}
+
+.slider-value {
+  text-align: center;
+  font-size: 2rem;
+}
